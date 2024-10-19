@@ -39,6 +39,7 @@
         },
         "template--19141670404383__2c7adbaa-1509-404a-b89b-0e99e5fc37fa-1685016485c7c7c0ab-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "Innovative E-Learning Courses",
             "heading_size": "h1",
