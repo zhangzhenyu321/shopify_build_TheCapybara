@@ -1,0 +1,154 @@
+.collection-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection-list-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .collection-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .collection-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.collection-list__item:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .slider.collection-list--1-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slider.collection-list--1-items,
+  .slider.collection-list--2-items,
+  .slider.collection-list--3-items,
+  .slider.collection-list--4-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list__item a:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-list.slider .collection-list__item {
+    max-width: 100%;
+  }
+}
+
+.collection-list-view-all {
+  margin-top: 5rem;
+}
+
+
+ul.collection-list.overlay li.collection-list__item .card__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+}
+#collections ul.collection-list.overlay .card sup.collection_product_count {
+  display: none;
+}
+#collections ul.collection-list.overlay  li.collection-list__item .card__content .card__information{
+  background: var(--gradient-base-background-1);
+  padding: 10px 40px;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+#collections ul.collection-list.overlay  li.collection-list__item .card__content .card__information p.card__caption{display:none;}
+#collections ul.collection-list.overlay  li.collection-list__item .card__content .card__information a.button.button--primary{display:none;}
+#collections ul.collection-list li.collection-list__item .card__content .card__information a.button.button--primary{margin-bottom:0; margin-top:15px;}
+
+.collection-list .collection-list-view-all a:after{opacity:0;}
+.collection-list .collection-list-view-all a{background:transparent;border:none;min-height: 80px;min-width: 223px;font-size:18px;color: var(--gradient-base-accent-1);}
+.collection-list .collection-list-view-all a:hover{color: var(--gradient-base-background-2);}
+.collection-list .collection-list-view-all a span.button-icon {
+    position: absolute;
+    font-size: 244px;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+}
+.collection-list .collection-list-view-all a span.button-icon svg{width:244px;height:auto;}
+.collection-list .collection-list-view-all a span.button-icon svg path{
+   stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: rgba(var(--color-base-solid-button-labels));
+   }
+.collection-list .collection-list-view-all a:hover span.button-icon svg path{ animation: 2s linear 0s 1 reverse animated-circle;}
+
+@keyframes animated-circle{
+0% {
+    stroke-dashoffset: 0;
+}
+40% {
+    stroke-dashoffset: 1560;
+}
+80% {
+    stroke-dashoffset: 3120;
+}
+100% {
+    stroke-dashoffset: 3120;
+}
+}
+
+
+.custom-collection-list  .card .card__inner  .card__media img{width: 65px;height: 65px; object-fit:contain;position:relative;right:0;bottom:0;margin:auto;}
+.custom-collection-list  .card .card__inner .card__media,
+.custom-collection-list .card-wrapper .card__inner{width: 80px;height: 80px; display: flex;align-items:center;justify-content:center;position:relative;border-radius: 1.5rem;z-index:-1;}
+.custom-collection-list .card--media .card__inner .card__content{display:none;}
+.custom-collection-list  .card {align-items: center;text-align: center;justify-content:center;height:auto!important;}
+.custom-collection-list .card:hover .media.media--hover-effect>img:first-child:only-child,
+.custom-collection-list .card-wrapper:hover .media.media--hover-effect>img:first-child:only-child {transform: scale(1);}
+.custom-collection-list .card__media .media{background:transparent;position:relative;right:0;bottom:0;}
+.custom-collection-list .card-wrapper{padding: 40px;border-radius: 20px;height:auto;background: rgba(var(--color-base-solid-button-labels), 0.1);transition: all 0.3s linear;} 
+.custom-collection-list .card__media .media .motion-reduce.loaded-image:first-child{animation:none;opacity:1}
+.custom-collection-list  .card__information .card__heading{font-size:24px;font-weight:500;margin:0;transition:all 0.3s linear;}
+.custom-collection-list  .card__information .collection_product_count{font-size: 18px;}
+.custom-collection-list  .card__information .collection_product_count span{margin-left:5px;}
+.custom-collection-list   .card__content{padding:10px 0 0;display:block;}
+.custom-collection-list .card-wrapper:hover .card__information .card__heading{color: var(--gradient-base-background-1);}
+.custom-collection-list .card-wrapper .card .card__information .collection_product_count{transition:all 0.3s linear;margin:0;color: rgba(var(--color-base-solid-button-labels));}
+.custom-collection-list .card-wrapper:hover .card .card__information .collection_product_count{opacity:0;}
+.custom-collection-list  .slider.slider--mobile .slider__slide{padding:0}
+.custom-collection-list .collection-slider-buttons{margin-top:30px;}
+.custom-collection-list .card__information .card__heading a:hover { color: var(--gradient-base-background-1);}
+.custom-collection-list .card-wrapper .card{transition:all 0.3s linear;}
+.custom-collection-list .card-wrapper:hover .card{transform:translateY(10px);-webkit-transform:translateY(10px);}
+.custom-collection-list .card-wrapper:hover{background: rgba(var(--color-base-solid-button-labels));}
+#collections .custom-collection-list  .card .card__inner .card__media,
+#collections .custom-collection-list .card-wrapper .card__inner{background: rgba(var(--color-base-solid-button-labels), 0.8)}
+
+
+@media screen and (max-width: 1540px) {
+.custom-collection-list  .card__information .card__heading{font-size:20px;}
+}
+@media screen and (max-width: 1199px) {
+
+}

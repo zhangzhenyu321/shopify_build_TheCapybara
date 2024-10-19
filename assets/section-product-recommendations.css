@@ -1,0 +1,50 @@
+.product-recommendations {
+  display: block;
+  z-index:0;
+  position: relative;
+}
+
+.product-recommendations:not(.product-recommendations--loaded) {
+  padding: 0;
+  margin: 0;
+}
+
+.product-recommendations__heading {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.product-recommendations__heading {
+  margin: 0;
+  margin-bottom: 3rem;
+    font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .product-recommendations__heading {
+  font-size: 3.6rem;
+  }
+}
+.product-recommendations .swiper-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-recommendations .swiper-button-next {
+    right: -50px;
+}
+.product-recommendations .swiper-button-prev {
+    left: -50px;
+}
+.product-recommendations .swiper-button-next, .product-recommendations .swiper-button-prev {
+    bottom: 0px;
+    top: auto;
+/*     background: var(--gradient-base-background-2);
+    border-radius: 5px;
+    color: var(--gradient-base-background-1); */
+    margin: 0 10px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+@media screen and (max-width: 1199px){
+  .product-recommendations .swiper-navigation {margin-top: 30px;}
+}

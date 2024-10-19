@@ -1,0 +1,33 @@
+<style type="text/css">
+  .template-404 .title{font-size: 5rem;font-weight: 600;margin: 0;}
+  .template-404 .button{margin:50px 0 0;}
+  .template-404 .subtext-404{font-size: 20vw;line-height: normal; margin: 0;font-weight: 700;color: rgba(var(--color-base-accent-2), 0.3);}
+  .template-404 {margin-top: 0;margin-bottom: 11rem;}
+  
+ @media screen and (max-width: 1540px) { .template-404 .subtext-404{font-size: 400px;line-height: 400px;}}
+ @media screen and (max-width: 990px) { 
+   .template-404 .subtext-404{font-size: 200px;line-height: 200px;}
+   .template-404 .title{font-size: calc(50px * 0.8);}
+    }
+ @media screen and (max-width: 750px){
+   .template-404 {margin-bottom: calc(120px / 2);}
+   .template-404 .subtext-404{font-size: 140px;line-height: 140px;}
+   .template-404 .title{font-size: calc(50px * 0.6);}
+ }     
+  
+</style>
+
+<div class="template-404 page-width page-margin center">
+  <p class="subtext-404">
+    {{ 'templates.404.subtext' | t }}
+  </p>
+  <h1 class="title">
+    {{ 'templates.404.title' | t }}
+  </h1>
+    <p class="description">
+    {{ 'templates.404.description' | t }}
+  </p>
+  <a href="{{ routes.root_url }}" class="button">
+     {{ 'templates.404.button_text' | t }}
+  </a>
+</div>

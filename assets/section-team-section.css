@@ -1,0 +1,115 @@
+.team-section .team-section-section.two-column{ display: grid; grid-template-columns: repeat(2,1fr);}
+.team-section .team-section-section.three-column{ display: grid;  grid-template-columns: repeat(3,1fr);}
+.team-section .team-section-section.four-column{ display: grid; grid-template-columns: repeat(4,1fr);}
+.team-section .team-section-section.five-column{ display: grid; grid-template-columns: repeat(5,1fr);}
+.team-section .team-section-section.six-column{ display: grid; grid-template-columns: repeat(6,1fr);}
+.team-section .team-section-section{ column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-spacing);}
+@media screen and (max-width: 1199px) and (min-width: 751px) {
+.team-section .team-section-section.four-column{ display: grid; grid-template-columns: repeat(2,1fr);}
+.team-section .team-section-section.five-column{ display: grid; grid-template-columns: repeat(3,1fr);}
+.team-section .team-section-section.six-column{ display: grid; grid-template-columns: repeat(3,1fr);}
+.team-section .team-section-section { column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}  
+}
+ @media screen and (max-width: 750px) {
+ .team-section .team-section-section.two-column{ display: grid; grid-template-columns: repeat(1,1fr);}
+.team-section .team-section-section.three-column{ display: grid;  grid-template-columns: repeat(1,1fr);}
+.team-section .team-section-section.four-column{ display: grid; grid-template-columns: repeat(1,1fr);}
+.team-section .team-section-section.five-column{ display: grid; grid-template-columns: repeat(1,1fr);}
+.team-section .team-section-section.six-column{ display: grid; grid-template-columns: repeat(1,1fr);}
+.team-section .team-section-section { column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}
+ }
+.team-section .title-wrapper-with-link.content-align--left{align-items: flex-start;}
+.team-section .title-wrapper-with-link.content-align--center{align-items: center;}
+.team-section .team-section-section .team-section-wrapper .team-section-block-image img.team-section-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-section-inner.banner--content-align-center {
+    align-items: center;
+    text-align: center;
+}
+.team-section-inner.banner--content-align-right {
+    align-items: flex-end;
+    text-align: right;
+}
+.team-section-inner.banner--content-align-left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.team-section .team-section-section:not(.background-none) .team-section-wrapper {
+  background: rgb(var(--color-background));
+  height: 100%;
+}
+
+.team-section .dt-sc-team-section-section.background-primary .team-section-wrapper {
+  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+}
+.team-section p.description { max-width: 400px;  margin-top: 20px;}
+.team-section .team-section-content .team-section-inner h4.main-title a{color:var(--color-foreground);}
+.team-section .team-section-content{padding:40px;}
+.team-section .team-section-content h4.main-title{  margin: 0; font-size: 2.4rem; margin-bottom: 0px;    font-weight: 600;  line-height: 36px;transition:all 0.3s linear; }
+.team-section .team-section-content h6.sub-title{  margin: 0;  font-size: 1.6rem; font-weight: 400; letter-spacing: 0px; line-height: 22px;color: var(--gradient-base-accent-3);transition:all 0.3s linear;}
+.team-section-content-icon li.list-social__item:not(:last-child) { margin-right: 70px;}
+.team-section .list-social{margin-top:0;}
+.team-section .list-social__link:hover{ color: var(--gradient-base-accent-2);}
+.team-section .team-section-block-image{position:relative;}
+.team-section  .team-section-block-image {  display: flex; /*justify-content: center;*/}
+.team-section .list-social__link{    padding: 0; color: var(--gradient-background);}
+.team-section .team-section-block-image img{width:100%;}
+
+
+
+/*Overlay style*/
+.team-section-section.overlay .team-section-wrapper{ height: 500px; position: relative;}
+.team-section-section.overlay .team-section-wrapper .team-section-block-image{width:100%; height:100%; }
+.team-section-section.overlay .team-section-wrapper .team-section-content{    position: absolute; top: 0; bottom: 0; margin: auto; left: 0; right: 0; background: rgba(var(--color-background),0.4);}
+.team-section-section.overlay .team-section-wrapper .team-section-content .team-section-inner{    width: 100%;  height: 100%;  display: flex;  flex-direction: column;   justify-content: center;}
+
+/* custom */
+.custom-team-section.team-section .team-section-section .team-section-wrapper{box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 5%);padding: 30px;border-radius: 15px;transition:all 0.3s linear;}
+.custom-team-section.team-section .team-section-section .team-section-wrapper .team-section-block-image img.team-section-image{border-radius: 20px;}
+.custom-team-section.team-section  .team-section-block-image:after{border-radius:15px;}
+.custom-team-section.team-section .team-section-content {padding: 26px 0 0;}
+.custom-team-section.team-section .team-section-section .team-section-wrapper:hover{background:rgba(var(--color-base-solid-button-labels));}
+.custom-team-section.team-section .team-section-content-icon{left: 10%;right: 10%;}
+.custom-team-section.team-section  .team-section-content-icon .team__list-social{background: var(--gradient-base-background-1);border-radius: 20px;padding: 20px 0;}
+.custom-team-section.team-section  .team-section-content-icon .team__list-social .list-social__item{padding:0px 20px;}
+.custom-team-section.team-section  .list-social__link{color: rgba(var(--color-base-solid-button-labels));}
+.custom-team-section.team-section .team-section-content-icon li.list-social__item:not(:last-child){margin:0;}
+.custom-team-section.team-section .team-section-content-icon .list-social__item .icon{width:2.2rem;height:2.2rem;}
+.custom-team-section.team-section .team-section-wrapper:hover .team-section-content h4.main-title,
+.custom-team-section.team-section .team-section-wrapper:hover .team-section-content h6.sub-title{color:var(--gradient-base-background-1);}
+.custom-team-section.team-section .team-section-content-icon li.list-social__item:not(:last-child) {border-right: 1px solid rgba(var(--color-base-solid-button-labels));}
+.custom-team-section.team-section .list-social__link:hover .icon,
+.custom-team-section.team-section .list-social__link .icon{transform: scale(1);}
+.custom-team-section.team-section .list-social__link:hover{color: var(--gradient-base-background-2);}
+
+ @media screen and (max-width: 1700px) {
+.custom-team-section.team-section  .team-section-content-icon .team__list-social .list-social__item{padding:0px 16px;}
+ }
+ @media screen and (max-width: 1540px) {
+.custom-team-section.team-section  .team-section-content-icon .team__list-social .list-social__item{padding:0px 14px;}
+ }
+ @media screen and (max-width: 1439px) {
+.custom-team-section.team-section  .team-section-content-icon .team__list-social .list-social__item{padding:0px 10px;}
+.custom-team-section.team-section  .team-section-content-icon{left:5%;right:5%;}   
+ }
+ @media screen and (max-width: 1199px) {
+.custom-team-section.team-section .team-section-content-icon .team__list-social .list-social__item { padding: 0 18px;}
+.custom-team-section.team-section  .team-section-wrapper-heading{padding:0 80px;}
+ }
+@media screen and (max-width: 989px) {
+.custom-team-section.team-section  .team-section-wrapper-heading{padding:0 0px;}
+.custom-team-section.team-section .team-section-content-icon .team__list-social .list-social__item {padding: 0 16px;}  
+ }
+@media screen and (max-width: 767px) {
+.custom-team-section.team-section .team-section-section.four-column{    grid-template-columns: repeat(2,1fr);}
+.custom-team-section.team-section .team-section-section .team-section-wrapper{padding:20px;}  
+.custom-team-section.team-section .team-section-content-icon .team__list-social .list-social__item {padding: 0 10px;}  
+}
+@media screen and (max-width: 575px) {
+.custom-team-section.team-section .team-section-content-icon .team__list-social{  width: max-content;margin: auto;}
+.custom-team-section.team-section .team-section-section.four-column{    grid-template-columns: repeat(1,1fr);}  
+}

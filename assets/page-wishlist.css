@@ -1,0 +1,156 @@
+table{
+    border-collapse: collapse;
+    border-color: inherit;
+    text-indent: 0;
+    border-spacing: 0;
+    clear: both;
+    margin: 0 0 1rem;
+    width: 100%;
+}
+pre, table td, table th {
+    border: 1px solid var(--gradient-base-accent-1);
+}
+table td, table th {
+    padding: 10px;
+    text-align: center;
+    word-break: break-word;
+}
+dtx-wishlist-grid table{
+    border: 1px solid var(--gradient-base-accent-1);
+}
+dtx-wishlist-grid table thead>tr {
+    background-color: var(--gradient-base-background-2);
+    border: 1px solid var(--gradient-base-accent-1);
+}
+dtx-wishlist-grid table
+thead>tr th {
+    border-top: medium none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 700;border:none;
+    color:var(--gradient-base-background-1);
+}
+/* dtx-wishlist-grid table tbody>tr {
+    border-bottom: 1px solid var(--gradient-base-background-2);
+} */
+.dtx-grid-empty.dtx-grid-show h2 {
+    margin-top: 0;
+}
+dtx-wishlist-grid table tbody>tr td.product-thumbnail {
+    width: 150px;
+}
+dtx-wishlist-grid table tbody>tr td {
+    border: none;
+}
+dtx-wishlist-grid table tbody>tr td a:focus-visible {
+    box-shadow: none;
+     outline: none;
+     outline-offset: 0;
+}
+dtx-wishlist-grid table tbody>tr td.product-thumbnail img {
+    border-radius:Calc(var(--buttons-radius) - 30px); width:100%;
+}
+dtx-wishlist-grid a.remove-item.product-cart svg {
+    width: 26px;
+    height: 26px;
+/*     color: var(--color-icon); */
+}
+dtx-wishlist-grid table tbody>tr td a {
+    color: var(--gradient-base-accent-1);
+    font-weight:700;
+    display: inline-flex;
+  font-size:18px;
+}
+dtx-wishlist-grid table tbody>tr td a.remove-item.product-cart:hover {
+    color: rgba(var(--color-base-solid-button-labels));
+}
+.page-width.wishlist{padding-top:1rem; padding-bottom:0rem; }
+dtx-wishlist-grid table tbody>tr td a:hover {color:rgba(var(--color-base-solid-button-labels));}
+dtx-wishlist-grid table tbody>tr td.product-thumbnail a{display: flex;} 
+
+@media only screen and (max-width: 991px){
+dtx-wishlist-grid table thead {
+    display: none;
+}
+/* dtx-wishlist-grid table tbody>tr {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}   */
+/* dtx-wishlist-grid table tbody>tr td, dtx-wishlist-grid table tbody>tr td.product-thumbnail {
+    width: 100%;
+    display: inline-block;
+}  */
+}
+@media only screen and (max-width: 767px){
+dtx-wishlist-grid table thead {
+    display: none;
+}
+dtx-wishlist-grid table tbody>tr {
+    width: 100%;
+    padding-bottom: 10px;
+    display: block;
+}  
+dtx-wishlist-grid table tbody>tr td, dtx-wishlist-grid table tbody>tr td.product-thumbnail {
+    width: 100%;
+    display: block;
+} 
+}
+@media only screen and (max-width: 1199px){
+   .page-width.wishlist, .page-width.compare{
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+   } 
+}
+table.dtx-table.dtx-grid-hide {
+    display: none;
+}
+.dtx-grid-empty.dtx-grid-hide {
+    display: none;
+}
+.dtx-grid-empty.dtx-grid-show{    
+  text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+.dtx-grid-empty.dtx-grid-show img{ margin-bottom:30px;}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+  dtx-wishlist-grid table tbody>tr{    
+    padding: 30px 30px 0px 270px;
+    position: relative;
+    display: block;
+  }
+  dtx-wishlist-grid table tbody>tr:last-child{ padding-bottom: 30px;}
+  dtx-wishlist-grid table tbody > tr td.product-thumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    padding:2rem;
+}
+  dtx-wishlist-grid table tbody > tr td {
+    padding: 1.5rem 0 0;
+}  
+/*  dtx-wishlist-grid table tbody > tr td:not(:last-child) {
+    padding-bottom: 0;
+} */
+ dtx-wishlist-grid table tbody>tr td:last-child{padding-bottom:0;}
+ dtx-wishlist-grid table tbody>tr td.product-thumbnail img {
+    border-radius: var(--DTRadius);
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+dtx-wishlist-grid  table tbody>tr td, dtx-wishlist-grid  table tbody>tr td.product-thumbnail {
+/*     width: 100%; */
+    display: block;
+}
+  dtx-wishlist-grid table tbody > tr td {
+    text-align: left;
+    line-height: normal;
+}
+}
