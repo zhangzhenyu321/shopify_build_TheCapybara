@@ -304,7 +304,8 @@
           "page_full_width": false,
           "page_full_width_spacing": false,
           "color_scheme": "accent-1",
-          "logo_width": 130,
+          "logo": "shopify://shop_images/WechatIMG95.png",
+          "logo_width": 250,
           "logo_position": "middle-left",
           "menu_alignment": "center",
           "menu": "main-menu",
@@ -484,13 +485,13 @@
           "ad2319a5-3b0a-4abe-8f83-a627ca9b3c2c": {
             "type": "heading",
             "settings": {
-              "heading": "Always First. test test alibaba"
+              "heading": "Sign up for study tips!"
             }
           },
           "03297923-22c8-4e4e-bcf4-b26fb6693c69": {
             "type": "paragraph",
             "settings": {
-              "paragraph": "<p>Nulla tincidunt convallis bibendum. Duis sed risus cipit justo Integer neque felis, egestas a euismod in pulvinar.</p>"
+              "paragraph": "<p>Our amazing tutor regularly shares study tips into your email boxes. Sign up for free to receive study tips and information of the website.</p>"
             }
           },
           "8b169acd-6538-4ffb-8180-993928abf105": {
