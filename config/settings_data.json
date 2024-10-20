@@ -309,8 +309,8 @@
           "logo_position": "middle-left",
           "menu_alignment": "center",
           "menu": "main-menu",
-          "show_secondary_menu": false,
-          "secondary_menu": "",
+          "show_secondary_menu": true,
+          "secondary_menu": "customer-account-main-menu",
           "mobile_screen_width": "1340",
           "show_line_separator": false,
           "enable_sticky_header": true,
@@ -347,9 +347,9 @@
             "type": "address",
             "settings": {
               "address_heading": "",
-              "footer_address": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
-              "footer_contact_no": "000 123456789",
-              "footer_contact_id": "info@example.com",
+              "footer_address": "",
+              "footer_contact_no": "0435277839",
+              "footer_contact_id": "garyzhangzy1@gmail.com",
               "office_hours": "",
               "alignment": "left"
             }
