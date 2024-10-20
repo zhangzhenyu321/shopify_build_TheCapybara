@@ -203,6 +203,7 @@
       "block_order": [
         "6dbdc014-284c-4a10-9772-37c0c5f9b832"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": true,
         "page_full_width_spacing": false,
@@ -367,6 +368,7 @@
     },
     "db60d1d4-6d58-4470-9c66-e3aad8b2c34d": {
       "type": "brand-logos",
+      "disabled": true,
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
@@ -588,6 +590,7 @@
         "7027d943-443d-446b-a5b3-529d4f201fc2",
         "52350af6-a2a6-4d91-8573-d60078198525"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": true,
         "page_full_width_spacing": false,
@@ -658,6 +661,7 @@
         "258d648f-a55f-4e5f-9977-eafc9bfd2280",
         "e9f689d5-187c-499f-a609-6ada5a1b60e9"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
@@ -725,6 +729,7 @@
         "5b16378e-d496-4891-a54e-0ddc6a3e9f10",
         "dd3e318c-4809-44e7-bab7-811207d7ebf2"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
@@ -753,6 +758,7 @@
     },
     "96d09100-1544-4739-b71c-d45cd1056358": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
